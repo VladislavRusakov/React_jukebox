@@ -171,7 +171,7 @@ const data =  [
 
     {   
         id: 18,
-        artist: "Masayoshi Takanaka",
+        artist: "Makoto Matsushita",
         title: "First Light",
         color: "white",
         isPlayed: false,
@@ -179,15 +179,6 @@ const data =  [
         youtubeUrl: "https://youtu.be/o1rclw8Rugs"
     },
 
-    {   
-        id: 19,
-        artist: "-",
-        title: "",
-        color: "",
-        isPlayed: false,
-        imageUrl: "",
-        youtubeUrl: ""
-    },
 ]
 
 function Shelf(props) {
@@ -215,7 +206,7 @@ function Jukebox(props) {
     return (
     <div className="jukebox">
         <div className="jukebox__head">
-            <div className="jukebox__record">
+            <div className={playedRecord ? "jukebox__record spinning": "jukebox__record"}>
                 {playedRecord ? <img className="jukebox__record-image" src={playedRecord.imageUrl} />:
                  <img className="jukebox__record-image" src="https://rms4.kufar.by/v1/list_thumbs_2x/adim1/0f5fb9d8-8f40-4ccc-af45-4aace9a6d7c8.jpg" />}
             </div>

@@ -15,7 +15,7 @@ body {
 }
 
 .shelf {
-    width: 620px;
+    width: 99vw;
     height: 150px;
     border: solid black 2px;
     display: flex;
