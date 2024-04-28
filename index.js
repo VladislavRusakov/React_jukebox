@@ -193,7 +193,7 @@ const data =  [
 function Shelf(props) {
     let items = data.map(item => {
         return (
-        <Book
+        <Record
             key={item.id}
             item={item}
             handleClick={props.handleClick}
@@ -211,18 +211,25 @@ function Shelf(props) {
 }
 
 function Jukebox(props) {
-    const playedBook = props.state.find((book) => book.isPlayed ? book.imageUrl: false)
+    const playedRecord = props.state.find((Record) => Record.isPlayed ? Record.imageUrl: false)
 
     return (
     <div className="jukebox">
         <div className="jukebox__head">
             <div className="jukebox__record">
-                {playedBook ? <img className="jukebox__record-image" src={playedBook.imageUrl} />:
+                {playedRecord ? <img className="jukebox__record-image" src={playedRecord.imageUrl} />:
                  <img className="jukebox__record-image" src="https://rms4.kufar.by/v1/list_thumbs_2x/adim1/0f5fb9d8-8f40-4ccc-af45-4aace9a6d7c8.jpg" />}
             </div>
         </div>
         <div className="jukebox__body">
             <div className="jukebox__internal">
+                <div class="ticker-container">
+                <div class="ticker-content">
+                    {playedRecord ? <span>{ playedRecord.artist} - {playedRecord.title}</span>:
+                    <span>Jukebox</span>
+                    }
+                </div>
+                </div>
             </div>
         </div>
         <div className="jukebox__leg jukebox__leg--left"></div>
@@ -231,10 +238,10 @@ function Jukebox(props) {
     )
 }
 
-function Book(props) {
+function Record(props) {
  
     return (
-        <div className="book" key={props.item.id}>
+        <div className="record" key={props.item.id}>
           <div className="face spine white">
             <div className="rotated-text">{props.item.artist}</div>
           </div>
@@ -259,8 +266,8 @@ function App() {
 
     function handleClick(id) {
         setNowPlaying(prevNowPlaying => {
-            return prevNowPlaying.map((book) => {
-                return book.id === id ? {...book, isPlayed: true}: {...book, isPlayed: false}
+            return prevNowPlaying.map((Record) => {
+                return Record.id === id ? {...Record, isPlayed: true}: {...Record, isPlayed: false}
             })
         })
     }
