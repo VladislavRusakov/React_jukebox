@@ -203,10 +203,9 @@ function Shelf(props) {
         )})
 
     return (
-
-        <div className="shelf">
-            {items}
-        </div>
+    <div className="shelf">
+        {items}
+    </div>
     )
 }
 
@@ -223,13 +222,15 @@ function Jukebox(props) {
         </div>
         <div className="jukebox__body">
             <div className="jukebox__internal">
-                <div class="ticker-container">
-                <div class="ticker-content">
+                <div className="ticker-container">
+                <div className="ticker-content">
                     {playedRecord ? <span>{ playedRecord.artist} - {playedRecord.title}</span>:
                     <span>Jukebox</span>
                     }
                 </div>
                 </div>
+                {playedRecord ? <img src={playedRecord.imageUrl} />:
+                 <img src="https://w7.pngwing.com/pngs/120/838/png-transparent-carpet-kitchen-textile-cotton-indigo-texture-furniture-computer-wallpaper-symmetry-thumbnail.png" />}
             </div>
         </div>
         <div className="jukebox__leg jukebox__leg--left"></div>
