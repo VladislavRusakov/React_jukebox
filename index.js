@@ -179,6 +179,16 @@ const data =  [
         youtubeUrl: "https://youtu.be/o1rclw8Rugs"
     },
 
+    {   
+        id: 19,
+        artist: "Masayoshi Takanaka",
+        title: "Brasilian Skies",
+        color: "white",
+        isPlayed: false,
+        imageUrl: "https://upload.wikimedia.org/wikipedia/en/f/ff/Brasilian_Skies_cover.jpg",
+        youtubeUrl: "https://youtu.be/g8u3ff8dNjk"
+    },
+
 ]
 
 function Shelf(props) {
