@@ -80,48 +80,107 @@ body {
     object-fit: cover; /* or 'contain' depending on your preference */
   }
 
-.violet {
-    background-color: #B73F99;
-    color: white;
-}
-  
-.red {
-    background-color: #973C37;
-    color: white;
-}
-  
 .white {
     background-color: #FFFFFF;
     color: black;
 }
-  
-.black {
-    background-color: #1E202D;
-    color: white;
-}
-  
-.blue {
-    background-color: #223476;
-    color: white;
-}
-  
-.yellow {
-    background-color: #F9E37B;
-    color: black;
-}
-  
-.bright-red {
-    background-color: #D0011B;
-    color: black;
-}
-  
-.green {
-    background-color: #49A84E;
-    color: white;
-}
-  
-.purple {
-    background-color: #5E59C0;
-    color: white;
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 64px;
+
+    background: #161619;
 }
 
+.links {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+}
+
+.links * {
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+    border-radius: 5px;
+}
+
+.footer--text--container {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+}
+
+.footer--text--container * {
+    color: ghostwhite;
+    margin: auto;
+}
+
+.small--icon:hover {
+    transform: rotate(20deg);
+
+}
+
+.box {
+    --side: 25px;
+    height: var(--side);
+    width: var(--side);
+  }
+  
+  .childlu {
+    height: 50%;
+    width: 50%;
+    background-color: #aee231;
+    transition: 1s ease-in-out;
+  }
+  
+  .childlb {
+    height: 50%;
+    width: 50%;
+    background-color: #e2d031;
+    transition: 1s ease-in-out;
+  }
+  
+  .childrb {
+    height: 50%;
+    width: 50%;
+    background-color: #e2ac31;
+    transition: 1s ease-in-out;
+    transform: translateX(100%) translateY(-100%);
+  }
+  
+  .childru {
+    height: 50%;
+    width: 50%;
+    background-color: #d1e231;
+    transition: 1s ease-in-out;
+    transform: translateX(100%) translateY(-300%);
+  }
+  
+  .box:hover .childlu {
+    background-color: #d1e231;
+    transform: translateY(100%)  rotate(90deg);
+  }
+  
+  .box:hover .childlb {
+    background-color: #aee231;
+    transform: translateX(100%) rotate(90deg);
+  }
+  
+  .box:hover .childru {
+    background-color: #e2ac31;
+    transform: translateX(0) translateY(-300%) rotate(90deg);
+  }
+  
+  .box:hover .childrb {
+    background-color: #e2d031;
+    transform: translateX(100%) translateY(-200%) rotate(90deg);
+  }
+  
