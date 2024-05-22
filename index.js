@@ -295,8 +295,16 @@ const data =  [
         "isPlayed": false,
         "imageUrl": "https://www.jazzmessengers.com/72670-large_default/memory-lane-limited-japanese-lp-obi.jpg",
         "youtubeUrl": "https://youtu.be/pad5vu3ZV9M"
+    },
+    {
+        "id": 33,
+        "artist": "Hiroshi Suzuki",
+        "title": "Cat",
+        "isPlayed": false,
+        "imageUrl": "https://i.ebayimg.com/images/g/ge0AAOSwcAVjLXqw/s-l400.jpg",
+        "youtubeUrl": "https://youtu.be/jqvMGE9xzT8"
     }
-
+    
 ]
 
 function Shelf(props) {
