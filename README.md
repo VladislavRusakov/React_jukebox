@@ -1,7 +1,7 @@
 A live example: https://codepen.io/vladislavrusakov/pen/RwOEObr
 
 
-Or https://www.youtube.com/shorts/xWrXnheP9pE?feature=share
+Or https://664d97b7357e95aaaef10660--jukebox-react.netlify.app/
 
 
 ![image](https://github.com/VladislavRusakov/React_jukebox/assets/61735653/ce6315cd-694f-4e93-9794-99ee10d21967)
