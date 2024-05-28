@@ -61,8 +61,8 @@ const data =  [
     
     {   
         id: 7,
-        artist: "Cassiopea",
-        title: "Cassiopea",
+        artist: "Casiopea",
+        title: "Casiopea",
         color: "black",
         isPlayed: false,
         imageUrl: "https://upload.wikimedia.org/wikipedia/en/c/ca/CasiopeaSelfTitleAlbumCover.jpg",
